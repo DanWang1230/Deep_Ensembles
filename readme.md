@@ -13,6 +13,7 @@ We first obtain 5000 training examples from the cartpole simulator. The train da
 We use an ensemble of 5 networks. In each network, the input dimension is 6, and the output dimension is 8. The outputs here include both means and variances. The network architecture is 3-hidden layer NN with ReLU nonlinearity, containing 1000 hidden units. The 5000 training data is split into 100 batches (with batch size of 50). After some trials, we choose Adam optimizer. We trained the nn ensemble for 2000 epochs.
 
 The change of loss with respect to epoch number for each network is shown below.
+
 ![](Figures/Presentation1.png)
 
 A video output is shown [here](https://youtu.be/udZWSJnUNoY).
